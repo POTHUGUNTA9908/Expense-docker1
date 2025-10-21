@@ -1,3 +1,3 @@
-From nginx
-RUN rm -rf /usr/share/nginx/html/index.html
-COPY code /usr/share/nginx/html/
+FROM nginx
+RUN rm -rf /usr/share/nginx/html/*
+COPY . /usr/share/nginx/html/
